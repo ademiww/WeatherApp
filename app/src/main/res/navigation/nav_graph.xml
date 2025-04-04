@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_graph"
-    app:startDestination="@id/weatherFragment2">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
 
 
     <fragment
-        android:id="@+id/weatherFragment2"
-        android:name="com.example.weatherapp.presentation.fragments.WeatherFragment"
-        android:label="WeatherFragment" />
-
+        android:id="@+id/homeFragment2"
+        android:name="com.example.weatherapp.presenter.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>
